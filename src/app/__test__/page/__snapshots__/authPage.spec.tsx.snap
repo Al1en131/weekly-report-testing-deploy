@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout Page render Layout page 1`] = `
+<div>
+  <main
+    class="bg-primary  min-h-screen"
+  >
+     
+  </main>
+</div>
+`;

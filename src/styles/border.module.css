@@ -1,0 +1,241 @@
+.border_thankyou {
+  position: relative;
+
+  filter: drop-shadow(0px 64px 64px #662500a6);
+}
+.border_thankyou::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  padding: 0.5px;
+  background: radial-gradient(
+    100% 100% at 0% 0%,
+    rgba(255, 222, 89, 0.48) 0%,
+    rgba(27, 78, 107, 0.48) 100%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.border_nav {
+  position: relative;
+}
+.border_nav::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  padding: 0.5px;
+  background: radial-gradient(
+    100% 100% at 0% 0%,
+    rgba(255, 222, 89, 0.8) 0%,
+    rgba(94, 172, 221, 0.8) 100%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.border_arrow::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  padding: 0.5px;
+  background: radial-gradient(
+    100% 100% at 0% 0%,
+    rgba(255, 222, 89, 0.48) 0%,
+    rgba(27, 78, 107, 0.48) 100%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.border_link:hover {
+  position: relative;
+  background-blend-mode: lighten;
+  background: radial-gradient(
+      100% 100% at 0% 0%,
+      rgba(255, 222, 89, 0.12) 0%,
+      rgba(27, 78, 107, 0.12) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  background: #ffffff08;
+}
+.border_link:hover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  padding: 0.5px;
+  background: radial-gradient(
+    100% 100% at 0% 0%,
+    rgba(255, 222, 89, 0.12) 0%,
+    rgba(27, 78, 107, 0.12) 100%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.border_link_active {
+  position: relative;
+  background-blend-mode: lighten;
+  background: radial-gradient(
+      100% 100% at 0% 0%,
+      rgba(255, 222, 89, 0.12) 0%,
+      rgba(27, 78, 107, 0.12) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  background: #ffffff08;
+}
+.border_link_active::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  padding: 0.5px;
+  background: radial-gradient(
+    100% 100% at 0% 0%,
+    rgba(255, 222, 89, 0.12) 0%,
+    rgba(27, 78, 107, 0.12) 100%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.border_section {
+  position: relative;
+}
+.border_section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+  padding: 0.5px;
+  opacity: 1;
+  background: radial-gradient(100% 178.46% at 0% 0%, #ffde59 0%, #4a8cff 100%);
+
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.border_table {
+  position: relative;
+}
+.border_table::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+  padding: 0.5px;
+  opacity: 0.4;
+  background: radial-gradient(100% 178.46% at 0% 0%, #ffde59 0%, #4a8cff 100%);
+
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.border_driver {
+  position: relative;
+}
+.border_driver::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  padding: 0.5px;
+  background: radial-gradient(100% 178.46% at 0% 0%, #ffde59 0%, #4a8cff 100%);
+
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.border_add_article {
+  position: relative !important;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.border_add_article::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  padding: 0.5px;
+  background: radial-gradient(100% 285.16% at 0% 0%, #ffde59 0%, #5eacdd 100%);
+
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.border_input_article {
+  position: relative !important;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.border_input_article::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 3px;
+  padding: 0.5px;
+  /* background: radial-gradient(100% 100% at 0% 0%, #ffde59 0%, #5eacdd 100%); */
+  background: radial-gradient(100% 100% at 0% 0%, #ffde59 0%, #5eacdd 100%);
+
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.border_input {
+  position: relative;
+}
+.border_input::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+  border-radius: 3px;
+  padding: 0.5px;
+  /* background: radial-gradient(100% 100% at 0% 0%, #ffde59 0%, #5eacdd 100%); */
+  background: radial-gradient(100% 100% at 0% 0%, #ffde59 0%, #5eacdd 100%);
+
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.border_member_top {
+  position: relative;
+}
+.border_member_top::before {
+  content: "";
+  position: absolute;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  inset: 0;
+  padding: 0.5px;
+  background: radial-gradient(100% 178.46% at 0% 0%, #ffde59 0%, #4a8cff 100%);
+
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.border_member_bot {
+  position: relative;
+}
+.border_member_bot::before {
+  margin-top: -0.5px;
+  content: "";
+  position: absolute;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  inset: 0;
+  padding: 0.5px;
+  background: radial-gradient(100% 178.46% at 0% 0%, #ffde59 0%, #4a8cff 100%);
+
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}

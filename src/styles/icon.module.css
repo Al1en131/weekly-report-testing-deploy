@@ -1,0 +1,7 @@
+.logout_icon:hover > svg {
+  stroke: #ffde59;
+}
+.logout_icon > svg {
+  stroke: #1b4e6b;
+  transition: all 0.3s ease;
+}
